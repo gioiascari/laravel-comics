@@ -13,7 +13,8 @@
     <!-- / Header -->
 
     <!-- Main -->
-    @yield ('content')
+
+    @yield ('main')
     <!-- / Main -->
 
     <!-- Footer -->

@@ -1,9 +1,7 @@
 
 <header>
-
-        
-
-        <div class="container">
+<div class="menu">
+<div class="container">
                 <div class="logo">
                 <img src="{{ asset('img/dc-logo.png') }}" alt="tag">
                 <!-- <img src="{{ 'asset(img/dc-logo.png)' }}" alt=""> -->
@@ -20,18 +18,17 @@
                     <li><a href="#">VIDEOS</a></li>
                     <li><a href="#">FANS</a></li>
                     <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP <i class="fas fa-sort-down"></i></a></li>
+                    <li><a href="#">SHOP</a></li>
                 </ul>
                 </nav>
-                  
-
-             
-             
-     
-             
         </div>
+
           <!-- /.container -->
-    </div>
+</div>
+   
+        <div class="jumbotron">
+                <img src="{{ asset('img/jumbotron.jpg') }}" alt="tag">
+        </div>
       <!-- /.menu -->
 
 </header>

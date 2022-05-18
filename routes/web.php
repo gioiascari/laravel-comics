@@ -15,11 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-    return '<p>Ciao Larvarel</p>';
 });
-Route::get('/partials.header', function () {
-    return view('partials.header');
-   
-});
+
 
 
