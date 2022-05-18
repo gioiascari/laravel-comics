@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-
+//Header
 header {
     width: 100%;
 }
@@ -45,7 +45,9 @@ ul {
         vertical-align: middle;
     }
 }
+// /Header
 
+//Jumbotron header
 .jumbotron {
     height: 30rem;
     overflow: hidden;
@@ -54,9 +56,65 @@ ul {
 .jumbotron img {
     width: 100%;
 }
+// /Jumbotron header
 
+//Main
+main {
+    background-color: #303030;
+    .btn {
+        background-color: blue;
+        padding: 10px 50px;
+        color: white;
+    }
+    .btn-container {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
+.cards-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 50px 0px;
+    width: calc(100% / 6 - 15px * 5 / 6);
+    margin-bottom: 30px;
+    clip-path: border-box;
+    img {
+        height: 8rem;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: blue;
+    .card {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        .img-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100px;
+            }
+        }
+    }
+    p {
+        color: white;
+    }
+}
 // FOOTER
 
+//Top Footer
 .bg-footer {
     background-image: url("/img/footer-bg.jpg");
     height: 450px;
@@ -104,6 +162,9 @@ footer nav {
         }
     }
 }
+// /Top Footer
+//Bottom Footer
+
 .bottom-footer {
     background-color: #303030;
     height: 100px;
@@ -148,3 +209,4 @@ footer nav {
         }
     }
 }
+// /Bottom Footer

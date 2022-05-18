@@ -55,6 +55,70 @@ ul li a {
   width: 100%;
 }
 
+main {
+  background-color: #303030;
+}
+
+main .btn {
+  background-color: blue;
+  padding: 10px 50px;
+  color: white;
+}
+
+main .btn-container {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.cards-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  padding: 50px 0px;
+  width: calc(16.6666666667% - 12.5px);
+  margin-bottom: 30px;
+  -webkit-clip-path: border-box;
+          clip-path: border-box;
+}
+
+.cards-thumb img {
+  height: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: blue;
+}
+
+.cards-container .card {
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards-container .card .img-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container .card .img-card img {
+  width: 100px;
+}
+
+.cards-container p {
+  color: white;
+}
+
 .bg-footer {
   background-image: url("/img/footer-bg.jpg");
   height: 450px;
