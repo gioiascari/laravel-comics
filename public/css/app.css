@@ -2,14 +2,44 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: red;
 }
 
-h1 {
-  color: red;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-img {
-  background-color: red;
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container img {
+  height: 100px;
+  padding: 15px 0px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+ul li {
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
 }
 

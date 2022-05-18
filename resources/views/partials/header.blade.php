@@ -1,15 +1,16 @@
 
 <header>
+
         
-    <div class="menu">
+
         <div class="container">
                 <div class="logo">
                 <img src="{{ asset('img/dc-logo.png') }}" alt="tag">
                 <!-- <img src="{{ 'asset(img/dc-logo.png)' }}" alt=""> -->
                 </div>
                 <!-- /.logo -->
-                <div class="list">
-                    <ul>
+                <nav>
+                <ul>
                     <li><a href="#">CHARACTERS</a></li>
                     <li><a class="">COMICS</a></li>
                     <li><a href="#">MOVIES</a></li>
@@ -21,8 +22,12 @@
                     <li><a href="#">NEWS</a></li>
                     <li><a href="#">SHOP <i class="fas fa-sort-down"></i></a></li>
                 </ul>
-                </div>
-                <!-- /.list -->
+                </nav>
+                  
+
+             
+             
+     
              
         </div>
           <!-- /.container -->
