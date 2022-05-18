@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-body {
-  background-color: aquamarine;
-}
-
 header {
   width: 100%;
 }
@@ -57,5 +53,114 @@ ul li a {
 
 .jumbotron img {
   width: 100%;
+}
+
+.bg-footer {
+  background-image: url("/img/footer-bg.jpg");
+  height: 450px;
+}
+
+.container-footer {
+  width: 1140px;
+  margin: 0 auto;
+  background-image: url("/img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container-nav-footer {
+  padding: 40px 0;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav {
+  padding-bottom: 20px;
+}
+
+footer nav h4 {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer nav ul li {
+  list-style: none;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: grey;
+  font-family: sans-serif;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.bottom-footer {
+  background-color: #303030;
+  height: 100px;
+}
+
+.bottom-footer .bottom-footer-container {
+  width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-footer .bottom-footer-container .d-flex {
+  display: flex;
+}
+
+.bottom-footer .bottom-footer-container .btn-footer {
+  background-color: transparent;
+  border: 2px solid #0282f9;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.bottom-footer .bottom-footer-container .btn-footer:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+.bottom-footer .social {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-footer .social .social h4 {
+  text-transform: uppercase;
+  color: #0282f9;
+  padding-right: 15px;
+}
+
+.bottom-footer .social .social h4 .social img {
+  padding: 0 10px;
+}
+
+.bottom-footer .social .social h4 .social img:hover {
+  cursor: pointer;
+  filter: brightness(200%);
 }
 
