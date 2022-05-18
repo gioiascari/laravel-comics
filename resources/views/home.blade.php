@@ -8,15 +8,12 @@
     <title>Document</title>
 </head>
 <body>
+   
     <header>
-
+    @include ('/partials.header')
     </header>
     <main>
-        <nav>
-            <ul>
-                <li><a href="/contatti">Contatti</a>  </li>
-            </ul>
-        </nav>
+     
 
     </main>
     <footer>
