@@ -22,16 +22,7 @@ Route::get('/', function () {
 });
 
 //Route per visualizzare singola card di comics sulla home
-Route::get('single/{id}', function() {
-    $comics = config('comics');
-    $singleCard = '';
-    foreach($singleCard as $details) {
-        if($details[$id] == $id){
-            $singleCard = $details;
-        }
-    }
-    return view ('single', ['single'=> $singleCard]);
-
+Route::get('/single', function () {
+    $comic = config('comics');
+    return view('single', ["comic" => $comic[0]]);
 });
-
-

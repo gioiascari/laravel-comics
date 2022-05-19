@@ -11,9 +11,10 @@
              <div class="cards-container">
                 @foreach($comics as $comic)
                 <div class="cards-thumb">
-
-                    <img src="{{$comic['thumb']}}" alt="thumb">
-                    <p>{{$comic['series']}}</p>
+                    <a href="/single">
+                        <img src="{{$comic['thumb']}}" alt="thumb">
+                        <p>{{$comic['series']}}</p>
+                    </a>
                 </div>
                 @endforeach
             </div>
