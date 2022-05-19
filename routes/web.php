@@ -23,6 +23,6 @@ Route::get('/', function () {
 
 //Route per visualizzare singola card di comics sulla home
 Route::get('/single', function () {
-    $comic = config('comics');
-    return view('single', ["comic" => $comic[0]]);
+    $comics = config('comics');
+    return view('single', ["comics" => $comics[0]]);
 });

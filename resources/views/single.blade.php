@@ -2,6 +2,6 @@
 @section('main')
 <main>
 
-    <p>{{$comic['series']}}</p>
+    <p>{{$comics['series']}}</p>
   </main>
 @endsection
