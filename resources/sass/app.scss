@@ -7,6 +7,34 @@
 //Header
 header {
     width: 100%;
+    ul {
+        list-style: none;
+        display: flex;
+        height: 100%;
+
+        li {
+            padding: 0px 10px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 5px solid transparent;
+            &:hover {
+                border-bottom: 5px solid #0282f9;
+            }
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            vertical-align: middle;
+            &:hover {
+                color: #0282f9;
+            }
+        }
+    }
 }
 
 .menu {
@@ -24,27 +52,6 @@ header {
     }
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    height: 100%;
-
-    li {
-        padding: 0px 10px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    li a {
-        text-decoration: none;
-        color: black;
-        text-transform: uppercase;
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700;
-        vertical-align: middle;
-    }
-}
 // /Header
 
 //Jumbotron header
@@ -60,15 +67,24 @@ ul {
 
 //Main
 main {
+    display: flex;
     background-color: #303030;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    .container-main {
+        width: 80%;
+    }
     .btn {
-        background-color: blue;
+        background-color: #0282f9;
         padding: 10px 50px;
         color: white;
     }
     .btn-container {
         padding-bottom: 30px;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -77,12 +93,12 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
-    padding: 50px 0px;
+    padding: 20px 0px;
     width: calc(100% / 6 - 15px * 5 / 6);
     margin-bottom: 30px;
     clip-path: border-box;
     img {
-        height: 8rem;
+        height: 15rem;
         object-fit: cover;
         object-position: top;
         width: 100%;
@@ -91,9 +107,10 @@ main {
 
 .cards-container {
     display: flex;
-    justify-content: center;
     padding: 20px;
-    background-color: blue;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     .card {
         flex-wrap: wrap;
         text-align: center;
@@ -113,14 +130,49 @@ main {
     }
 }
 // FOOTER
+//icon top footer
+
+.icon-top-footer {
+    background-color: #0282f9;
+
+    .container-icon-top {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        padding: 50px 0;
+
+        & div:last-child img {
+            width: 50px;
+        }
+
+        .container-icon {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            img {
+                height: 50px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
 
 //Top Footer
+footer {
+    font-family: "Roboto Condensed", sans-serif;
+}
 .bg-footer {
     background-image: url("/img/footer-bg.jpg");
     height: 450px;
 }
 .container-footer {
-    width: 1140px;
+    width: 80%;
     margin: 0 auto;
     background-image: url("/img/dc-logo-bg.png");
     background-repeat: no-repeat;
@@ -169,7 +221,7 @@ footer nav {
     background-color: #303030;
     height: 100px;
     .bottom-footer-container {
-        width: 1140px;
+        width: 80%;
         margin: 0 auto;
         height: 100%;
         display: flex;
@@ -187,6 +239,7 @@ footer nav {
             color: white;
             &:hover {
                 cursor: pointer;
+                background-color: #0282f9;
                 box-shadow: 2px 2px 2px black;
             }
         }
@@ -195,16 +248,22 @@ footer nav {
         display: flex;
         align-items: center;
         width: 100%;
-        .social h4 {
+        h4 {
             text-transform: uppercase;
             color: #0282f9;
             padding-right: 15px;
-            .social img {
-                padding: 0 10px;
-                &:hover {
-                    cursor: pointer;
-                    filter: brightness(200%);
-                }
+            &:hover {
+                padding: 15px;
+                background-color: #0282f9;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        img {
+            padding: 0 10px;
+            &:hover {
+                cursor: pointer;
+                filter: brightness(200%);
             }
         }
     }

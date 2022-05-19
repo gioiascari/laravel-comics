@@ -4,7 +4,7 @@
 <div class="container">
                 <div class="logo">
                 <img src="{{ asset('img/dc-logo.png') }}" alt="tag">
-                <!-- <img src="{{ 'asset(img/dc-logo.png)' }}" alt=""> -->
+
                 </div>
                 <!-- /.logo -->
                 <nav>
@@ -14,7 +14,7 @@
                     <li><a href="#">MOVIES</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#">GAMES</a></li>
-                    <li><a href="#">COLLECTIBLES</a></li>
+                    <li><a href="#" >COLLECTIBLES</a></li>
                     <li><a href="#">VIDEOS</a></li>
                     <li><a href="#">FANS</a></li>
                     <li><a href="#">NEWS</a></li>
@@ -25,7 +25,7 @@
 
           <!-- /.container -->
 </div>
-   
+
         <div class="jumbotron">
                 <img src="{{ asset('img/jumbotron.jpg') }}" alt="tag">
         </div>
