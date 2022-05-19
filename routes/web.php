@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+//Route per visualizzare array di comics sulla home
 Route::get('/', function () {
 
     $comics = config('comics');
@@ -21,5 +21,17 @@ Route::get('/', function () {
     return view('home', ["comics" => $comics]);
 });
 
+//Route per visualizzare singola card di comics sulla home
+Route::get('single/{id}', function() {
+    $comics = config('comics');
+    $singleCard = '';
+    foreach($singleCard as $details) {
+        if($details[$id] == $id){
+            $singleCard = $details;
+        }
+    }
+    return view ('single', ['single'=> $singleCard]);
+
+});
 
 
