@@ -90,10 +90,6 @@ main .btn-container {
 }
 
 .cards-thumb {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: left;
   padding: 20px 0px;
   width: calc(16.6666666667% - 12.5px);
   margin-bottom: 30px;
@@ -136,6 +132,21 @@ main .btn-container {
 
 .cards-container p {
   color: white;
+}
+
+.singleCard {
+  background-color: #0282f9;
+}
+
+.singleCard .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.singleCard .cards-container img {
+  margin-top: -15rem;
 }
 
 .icon-top-footer {

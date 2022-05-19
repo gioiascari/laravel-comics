@@ -89,10 +89,6 @@ main {
 }
 
 .cards-thumb {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: left;
     padding: 20px 0px;
     width: calc(100% / 6 - 15px * 5 / 6);
     margin-bottom: 30px;
@@ -129,6 +125,23 @@ main {
         color: white;
     }
 }
+
+//Single Card
+.singleCard {
+    background-color: #0282f9;
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        justify-content: space-around;
+
+        img {
+            margin-top: -15rem;
+        }
+    }
+}
+
+// /Single Card
 // FOOTER
 //icon top footer
 
