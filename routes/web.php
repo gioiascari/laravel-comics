@@ -17,12 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comics = config('comics');
+    $nav = config('nav');
+    return view('home', ["comics" => $comics, "navigation" => $nav]);
 
-    return view('home', ["comics" => $comics]);
 });
 
-//Route per visualizzare singola card di comics sulla home
-Route::get('/single', function () {
+
+
+
+Route::get('/single/{i}', function ($i) {
+
+
     $comics = config('comics');
-    return view('single', ["comics" => $comics[0]]);
-});
+    $nav = config('navigation');
+    return view('partials.single', ["comic" => $comics[$i], "navigation" => $nav ]);
+
+    //return view('partials/card', [ "card"=> $data ]);
+
+
+  });
