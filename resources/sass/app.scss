@@ -127,10 +127,9 @@ header {
 }
 
 //Single Card
-.justify-center {
-    justify-content: center;
-}
+
 .c-main {
+    flex-direction: column;
     margin: auto;
     width: 80%;
     padding: 20px;
@@ -141,14 +140,35 @@ header {
         display: flex;
         justify-content: space-between;
         .text-desc {
-            width: 60%;
+            width: 75%;
         }
     }
+
     .availability {
-        width: 75%;
+        padding: 10px;
+        background-color: limegreen;
         display: flex;
         justify-content: space-between;
+        span {
+            color: rgb(255 255 255 / 72%);
+        }
+
+        .text-desc {
+            color: white;
+            display: flex;
+            a {
+                text-decoration: none;
+                color: white;
+                padding-left: 15px;
+            }
+        }
     }
+}
+.p-10 {
+    padding: 15px 0px;
+}
+.flex-end {
+    justify-content: flex-end;
 }
 .singleCard {
     background-color: #0282f9;

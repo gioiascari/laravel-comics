@@ -134,11 +134,8 @@ header ul li a:hover {
   color: white;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .c-main {
+  flex-direction: column;
   margin: auto;
   width: 80%;
   padding: 20px;
@@ -153,13 +150,37 @@ header ul li a:hover {
 }
 
 .c-main .description .text-desc {
-  width: 60%;
+  width: 75%;
 }
 
 .c-main .availability {
-  width: 75%;
+  padding: 10px;
+  background-color: limegreen;
   display: flex;
   justify-content: space-between;
+}
+
+.c-main .availability span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.c-main .availability .text-desc {
+  color: white;
+  display: flex;
+}
+
+.c-main .availability .text-desc a {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
+
+.p-10 {
+  padding: 15px 0px;
+}
+
+.flex-end {
+  justify-content: flex-end;
 }
 
 .singleCard {
