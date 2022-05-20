@@ -2,25 +2,17 @@
 <header>
 <div class="menu">
 <div class="container">
-                <div class="logo">
+            <div class="logo">
                 <img src="{{ asset('img/dc-logo.png') }}" alt="tag">
-
-                </div>
+              </div>
                 <!-- /.logo -->
-                <nav>
+
+                @foreach($navigation as $nav)
                 <ul>
-                    <li><a href="#">CHARACTERS</a></li>
-                    <li><a class="">COMICS</a></li>
-                    <li><a href="#">MOVIES</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">GAMES</a></li>
-                    <li><a href="#" >COLLECTIBLES</a></li>
-                    <li><a href="#">VIDEOS</a></li>
-                    <li><a href="#">FANS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP</a></li>
+                    <li><a href="/">{{$nav['text']}}</a></li>
                 </ul>
-                </nav>
+              @endforeach
+
         </div>
 
           <!-- /.container -->

@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comics = config('comics');
-    $nav = config('nav');
-    return view('home', ["comics" => $comics, "navigation" => $nav]);
+    $navigation = config('nav');
+    return view('home', ["comics" => $comics, "navigation" => $navigation]);
 
 });
 
@@ -29,10 +29,6 @@ Route::get('/single/{i}', function ($i) {
 
 
     $comics = config('comics');
-    $nav = config('navigation');
-    return view('partials.single', ["comic" => $comics[$i], "navigation" => $nav ]);
-
-    //return view('partials/card', [ "card"=> $data ]);
-
-
+    $navigation = config('nav');
+    return view('partials.single', ["comic" => $comics[$i], "navigation" => $navigation ]);
   });

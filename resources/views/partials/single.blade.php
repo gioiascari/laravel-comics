@@ -31,7 +31,27 @@
      </div>
 
  </div>
- {{--/ Card text focus --}}
+  {{--/ Card text focus --}}
+   {{--TALENT SECTION --}}
+ <div class="talent-section">
+     <div class="title-talent">
+   {{--TALENT SECTION --}}
+       <h1>TALENT</h1>
+         <div class="art-by">
+             <div class="text">
+                 <h4>
+                     Art By:
+                 </h4>
+                 <p>{{$comic['artists'][0]}}</p>
+             </div>
+         </div>
+
+     </div>
+
+ </div>
+   {{--/TALENT SECTION --}}
+
+
 
 
 
