@@ -9,10 +9,9 @@
 
                 @foreach($navigation as $nav)
                 <ul>
-                    <li><a href="/">{{$nav['text']}}</a></li>
+                    <li><a href="{{$nav['#active']}}">{{$nav['text']}}</a></li>
                 </ul>
               @endforeach
-
         </div>
 
           <!-- /.container -->

@@ -3,6 +3,9 @@
 
 @section('main')
     <main>
+    <div class="main">
+
+
         <div class="container-main">
 
             <div class="series-span">
@@ -34,10 +37,6 @@
             </div>
 
         </div>
-
-
-
-
-
+    </div>
     </main>
 @endsection

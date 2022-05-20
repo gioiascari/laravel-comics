@@ -4,6 +4,7 @@
 
  @section('main')
  {{-- Card top focus --}}
+
 <div class="singleCard">
     <div class="cards-container">
         <div class="card">
@@ -14,42 +15,36 @@
 </div>
  {{--/ Card top focus --}}
  {{-- Card text focus --}}
- <div class="">
-     <div class="title-container">
+ <div class="c-main justify-center">
+    <div class="title-container">
         <h1>{{$comic['title']}}</h1>
      </div>
+ </div>
+ <div class="c-main">
      <div class="availability">
-         <p>U.S Price : {{$comic['price']}}</p>
-         <p>Available</p>
+         <div class="text-desc">
+            <p>U.S Price : {{$comic['price']}}</p>
+        </div>
+        <div class="text-desc">
+            <p>Available</p>
+        </div>
+
      </div>
-     <div class="description">
+ </div>
+ <div class="c-main">
+    <div class="description">
+        <div class="text-desc">
+            <p>
+                {{$comic['description']}}
+            </p>
+        </div>
         <img src="{{$comic['thumb']}}" alt="">
-
-         <p>
-             {{$comic['description']}}
-         </p>
      </div>
-
  </div>
+  {{--/TALENT SECTION --}}
+    </div>
   {{--/ Card text focus --}}
-   {{--TALENT SECTION --}}
- <div class="talent-section">
-     <div class="title-talent">
-   {{--TALENT SECTION --}}
-       <h1>TALENT</h1>
-         <div class="art-by">
-             <div class="text">
-                 <h4>
-                     Art By:
-                 </h4>
-                 <p>{{$comic['artists'][0]}}</p>
-             </div>
-         </div>
 
-     </div>
-
- </div>
-   {{--/TALENT SECTION --}}
 
 
 

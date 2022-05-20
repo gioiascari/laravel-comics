@@ -64,7 +64,7 @@ header ul li a:hover {
   width: 100%;
 }
 
-main {
+.main {
   display: flex;
   background-color: #303030;
   justify-content: center;
@@ -72,17 +72,17 @@ main {
   font-weight: 700;
 }
 
-main .container-main {
+.main .container-main {
   width: 80%;
 }
 
-main .btn {
+.main .btn {
   background-color: #0282f9;
   padding: 10px 50px;
   color: white;
 }
 
-main .btn-container {
+.main .btn-container {
   padding-bottom: 30px;
   width: 100%;
   display: flex;
@@ -132,6 +132,34 @@ main .btn-container {
 
 .cards-container p {
   color: white;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.c-main {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.c-main .description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-main .description .text-desc {
+  width: 60%;
+}
+
+.c-main .availability {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .singleCard {

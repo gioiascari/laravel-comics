@@ -66,7 +66,7 @@ header {
 // /Jumbotron header
 
 //Main
-main {
+.main {
     display: flex;
     background-color: #303030;
     justify-content: center;
@@ -127,6 +127,29 @@ main {
 }
 
 //Single Card
+.justify-center {
+    justify-content: center;
+}
+.c-main {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    .description {
+        display: flex;
+        justify-content: space-between;
+        .text-desc {
+            width: 60%;
+        }
+    }
+    .availability {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .singleCard {
     background-color: #0282f9;
     .cards-container {
