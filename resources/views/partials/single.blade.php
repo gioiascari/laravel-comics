@@ -3,20 +3,18 @@
 
 
  @section('main')
+
  {{-- Card top focus --}}
 
 <div class="singleCard">
     <div class="cards-container">
         <div class="card">
-            <img src="{{$comic['thumb']}}" alt="">
+            <img src="{{$comics['thumb']}}" alt="">
         </div>
      </div>
 </div>
  {{--/ Card top focus --}}
  {{-- Card text focus --}}
-
-
-
  <div class="c-main">
 
 
@@ -24,11 +22,11 @@
 
         <div class="text-desc">
             <div class="title-container p-10">
-                <h1>{{$comic['title']}}</h1>
+                <h1>{{$comics['title']}}</h1>
              </div>
              <div class="availability">
                  <div class="text-desc ">
-                    <p><span>U.S Price : </span>{{$comic['price']}}</p>
+                    <p><span>U.S Price : </span>{{$comics['price']}}</p>
                 </div>
                 <div class="text-desc flex-end">
                     <span>Available</span>
@@ -44,17 +42,42 @@
              </div>
              <div class="p-10">
                 <p>
-                    {{$comic['description']}}
+                    {{$comics['description']}}
                 </p>
              </div>
         </div>
-        <img src="{{$comic['thumb']}}" alt="">
+        <img src="{{ asset('img/adv.jpg') }}" alt="">
      </div>
  </div>
 </div>
+ {{--/ Card text focus --}}
+  {{--TALENT SECTION --}}
+  <div class="c-main">
+    <div class="availability">
+        <div class="text-desc column">
+          <h1>TALENT</h1>
+          <div class="artBy">
+              <h1>Art By: </h1>
+            @foreach ($comics['artists'] as $artist)
+             <span class="artist">{{ $artist }}</span>,
+            @endforeach
+          </div>
+
+
+
+
+
+
+
+       </div>
+       <div class="text-desc flex-end">
+           <h1>SPECS</h1>
+       </div>
+    </div>
+  </div>
   {{--/TALENT SECTION --}}
 
-  {{--/ Card text focus --}}
+
 
 
 

@@ -19,6 +19,7 @@ header {
             align-items: center;
             border-bottom: 5px solid transparent;
             &:hover {
+                color: #0282f9;
                 border-bottom: 5px solid #0282f9;
             }
         }
@@ -58,11 +59,11 @@ header {
 .jumbotron {
     height: 30rem;
     overflow: hidden;
+    img {
+        width: 100%;
+    }
 }
 
-.jumbotron img {
-    width: 100%;
-}
 // /Jumbotron header
 
 //Main
@@ -169,6 +170,9 @@ header {
 }
 .flex-end {
     justify-content: flex-end;
+}
+.column {
+    flex-direction: column;
 }
 .singleCard {
     background-color: #0282f9;

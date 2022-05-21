@@ -7,19 +7,18 @@
               </div>
                 <!-- /.logo -->
 
-                @foreach($navigation as $nav)
+
                 <ul>
+                    @foreach($navigation as $nav)
                     <li><a href="{{$nav['#active']}}">{{$nav['text']}}</a></li>
+                    @endforeach
                 </ul>
-              @endforeach
+
         </div>
 
           <!-- /.container -->
 </div>
 
-        <div class="jumbotron">
-                <img src="{{ asset('img/jumbotron.jpg') }}" alt="tag">
-        </div>
       <!-- /.menu -->
 
 </header>

@@ -23,6 +23,7 @@ header ul li {
 }
 
 header ul li:hover {
+  color: #0282f9;
   border-bottom: 5px solid #0282f9;
 }
 
@@ -181,6 +182,10 @@ header ul li a:hover {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .singleCard {
