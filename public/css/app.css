@@ -5,6 +5,22 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.p-10 {
+  padding-bottom: 15px;
+}
+
+.p-top {
+  padding-top: 15px;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.column {
+  flex-direction: column;
+}
+
 header {
   width: 100%;
 }
@@ -39,6 +55,36 @@ header ul li a {
 
 header ul li a:hover {
   color: #0282f9;
+}
+
+header .search-input {
+  display: flex;
+  align-items: center;
+}
+
+header .search-input input {
+  text-align: end;
+  border: none;
+  border-bottom: 2px solid #0282f9;
+}
+
+header .search-input input::-moz-placeholder {
+  text-align: end;
+  font-family: FontAwesome;
+}
+
+header .search-input input:-ms-input-placeholder {
+  text-align: end;
+  font-family: FontAwesome;
+}
+
+header .search-input input::placeholder {
+  text-align: end;
+  font-family: FontAwesome;
+}
+
+header .search-input input:focus-visible {
+  outline: none;
 }
 
 .menu {
@@ -180,22 +226,6 @@ header ul li a:hover {
   text-decoration: none;
   color: white;
   padding-left: 15px;
-}
-
-.p-10 {
-  padding-bottom: 15px;
-}
-
-.p-top {
-  padding-top: 15px;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
-.column {
-  flex-direction: column;
 }
 
 .singleCard {

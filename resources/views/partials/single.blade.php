@@ -112,7 +112,7 @@
                    {{-- Price   --}}
                      <div class="talent-box">
                         <div class="content">
-                            <h1>Price: </h1>
+                            <h1>U.S Price: </h1>
                             <div class="art">
                                 <p class="series">{{$comics['price']}}</p>
                             </div>
@@ -123,7 +123,7 @@
                   {{-- Date  --}}
                   <div class="talent-box">
                         <div class="content">
-                            <h1>Price: </h1>
+                            <h1>On Sale Date: </h1>
                             <div class="art">
                                 <p class="series">{{$comics['sale_date']}}</p>
                             </div>

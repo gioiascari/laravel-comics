@@ -12,6 +12,10 @@
                     <li><a href="{{$nav['#active']}}">{{$nav['text']}}</a></li>
                 @endforeach
             </ul>
+            <div class="search-input">
+                <input type="text" placeholder="Search &#xf002;">
+
+              </div>
         </div>
     </div>
 </header>
