@@ -40,7 +40,7 @@
 
 
              </div>
-             <div class="p-10">
+             <div class="p-top">
                 <p>
                     {{$comics['description']}}
                 </p>
