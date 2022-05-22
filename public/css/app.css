@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
@@ -57,12 +58,16 @@ header ul li a:hover {
 }
 
 .jumbotron {
-  height: 30rem;
-  overflow: hidden;
+  height: 400px;
 }
 
 .jumbotron img {
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .main {
@@ -201,6 +206,74 @@ header ul li a:hover {
 
 .singleCard .cards-container img {
   margin-top: -15rem;
+}
+
+.talents-container {
+  background: #f6f6f6;
+  padding-bottom: 5rem;
+}
+
+.talents-container .wrapper {
+  display: flex;
+}
+
+.talents-container .wrapper .art {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.talents-container .wrapper .talent {
+  width: 50%;
+  padding: 30px;
+}
+
+.talents-container .wrapper .talent h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #003f5e;
+  padding-bottom: 1.5rem;
+}
+
+.talents-container .wrapper .talent .talent-box {
+  border-bottom: 1px solid #dadada;
+}
+
+.talents-container .wrapper .talent .talent-box h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #003f5e;
+}
+
+.talents-container .wrapper .talent .talent-box .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.talents-container .wrapper .talent .talent-box .content h1 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #66615c;
+  padding: 0;
+}
+
+.talents-container .wrapper .talent .talent-box .content p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #66615c;
+}
+
+.talents-container .wrapper .talent .talent-box .content .artist {
+  color: #47a6ff;
+}
+
+.talents-container .wrapper .talent .talent-box .content h5 {
+  text-transform: uppercase;
+}
+
+.talents-container .wrapper .talent .talent-box .content .series {
+  color: #303030;
 }
 
 .icon-top-footer {

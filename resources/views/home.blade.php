@@ -16,11 +16,11 @@
 
              <div class="cards-container">
 
-                @foreach($comics as $idCard=>$comic)
+                @foreach($comics as $index=>$comic)
 
                 <div class="cards-thumb">
 
-                    <a href="/single/{{$idCard}}">
+                    <a href="/single/{{$index}}">
 
                         <img src="{{$comic['thumb']}}" alt="{{ $comic['series'] }}">
 
